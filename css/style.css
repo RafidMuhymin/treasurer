@@ -5,3 +5,14 @@ header h1 {
   align-items: center;
   justify-content: center;
 }
+
+/* main content styles */
+main {
+  gap: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main * {
+  width: calc(50% - 2.5rem);
+}
