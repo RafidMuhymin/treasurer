@@ -16,3 +16,10 @@ main {
 main * {
   width: calc(50% - 2.5rem);
 }
+
+/* responsive styles */
+@media screen and (max-width: 768px) {
+  main * {
+    width: 100%;
+  }
+}
