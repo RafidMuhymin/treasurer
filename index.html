@@ -4,21 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Money Manager</title>
   </head>
   <body>
+    <!-- Header Content -->
     <header>
-      <h1>
+      <h1 class="d-flex justify-content-center align-items-center gap-3 my-3">
         Treasurer
         <i class="iconify menu-icon" data-icon="logos:treasuredata-icon"></i>
       </h1>
     </header>
-    <main>
+
+    <!-- Main Content -->
+    <main class="d-flex flex-wrap">
       <img src="images/safe.jpg" alt="Safe | Treasurer" />
-      <div>
-        <h2>Balance Manager UI</h2>
+      <div class="balance-manager text-center p-4">
+        <form>
+          <div class="income">
+            <h3>Income</h3>
+            <label>Income: <input class="form-control" type="number" /></label>
+          </div>
+          <div class="expenses">
+            <h3>Expenses</h3>
+            <label>Food: <input class="form-control" type="number" /></label>
+            <label>Rent: <input class="form-control" type="number" /></label>
+            <label>Clothes: <input class="form-control" type="number" /></label>
+          </div>
+          <button type="submit" class="btn btn-primary px-5 py-2">
+            Calculate
+          </button>
+        </form>
+        <div>
+          <h3>Total Expenses:</h3>
+          <h3>Total Balance:</h3>
+        </div>
+        <form class="gap-3 d-flex align-items-center justify-content-center">
+          <label class="d-flex align-items-center justify-content-between"
+            >Save: <input class="form-control" type="number" /> %</label
+          >
+          <button type="submit" class="btn btn-primary px-5 py-2">Save</button>
+        </form>
+        <div>
+          <h3>Saving Amount:</h3>
+          <h3>Remaining Balance:</h3>
+        </div>
       </div>
     </main>
     <script src="js/script.js"></script>

@@ -1,25 +1,45 @@
-/* Header styles */
-header h1 {
+/* Typography */
+:root {
+  font-size: 14px;
+}
+
+/* main content styles */
+main {
+  gap: 2.5rem;
+}
+
+main > * {
+  width: calc(50% - 2.5rem);
+}
+
+main h3 {
+  font-size: 1.4rem;
+}
+
+/* responsive styles */
+@media screen and (max-width: 768px) {
+  main > * {
+    width: 100%;
+  }
+}
+
+/* Balance Manager UI Styles */
+.balance-manager {
+  background-color: rgb(245, 245, 245);
+}
+
+.balance-manager label {
   gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* main content styles */
-main {
-  gap: 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
+.balance-manager input {
+  max-width: 20rem;
+  background-color: lightgray;
 }
 
-main * {
-  width: calc(50% - 2.5rem);
-}
-
-/* responsive styles */
-@media screen and (max-width: 768px) {
-  main * {
-    width: 100%;
-  }
+.balance-manager * {
+  margin: 0.5rem 0;
 }
