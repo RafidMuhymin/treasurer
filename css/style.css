@@ -1,0 +1,7 @@
+/* Header styles */
+header h1 {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
