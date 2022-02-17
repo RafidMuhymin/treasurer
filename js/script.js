@@ -1,5 +1,6 @@
 let income, balance, percentage;
 
+// Calculate expenses and balance, savings and remainingBalance
 const calculateExpenses = (e) => {
   const formdata = getFormdata(e);
 
@@ -21,6 +22,7 @@ const calculateExpenses = (e) => {
   document.querySelector(".remaining-balance").textContent = remainingBalance;
 };
 
+// Calculate savings and remainingBalance
 const calculateSavings = (e) => {
   const formdata = getFormdata(e);
 
@@ -34,6 +36,7 @@ const calculateSavings = (e) => {
   document.querySelector(".remaining-balance").textContent = remainingBalance;
 };
 
+// Get numbered form data object properties
 const getFormdata = (e) => {
   e.preventDefault();
 
