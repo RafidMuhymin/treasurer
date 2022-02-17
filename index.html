@@ -27,34 +27,53 @@
     <main class="d-flex flex-wrap">
       <img src="images/safe.jpg" alt="Safe | Treasurer" />
       <div class="balance-manager text-center p-4">
-        <form>
-          <div class="income">
+        <form onsubmit="calculateExpenses(event)">
+          <div>
             <h3>Income</h3>
-            <label>Income: <input class="form-control" type="number" /></label>
+            <label
+              >Income: <input class="form-control" type="number" name="income"
+            /></label>
           </div>
-          <div class="expenses">
+
+          <div>
             <h3>Expenses</h3>
-            <label>Food: <input class="form-control" type="number" /></label>
-            <label>Rent: <input class="form-control" type="number" /></label>
-            <label>Clothes: <input class="form-control" type="number" /></label>
+            <label
+              >Food: <input class="form-control" type="number" name="foodCost"
+            /></label>
+            <label
+              >Rent: <input class="form-control" type="number" name="rentCost"
+            /></label>
+            <label
+              >Clothes:
+              <input class="form-control" type="number" name="clothCost"
+            /></label>
           </div>
+
           <button type="submit" class="btn btn-primary px-5 py-2">
             Calculate
           </button>
         </form>
+
         <div>
-          <h3>Total Expenses:</h3>
-          <h3>Total Balance:</h3>
+          <h3>Total Expenses: <span class="expenses">0</span></h3>
+          <h3>Total Balance: <span class="balance">0</span></h3>
         </div>
-        <form class="gap-3 d-flex align-items-center justify-content-center">
+
+        <form
+          class="gap-3 d-flex align-items-center justify-content-center"
+          onsubmit="calculateSavings(event)"
+        >
           <label class="d-flex align-items-center justify-content-between"
-            >Save: <input class="form-control" type="number" /> %</label
+            >Save:
+            <input class="form-control" type="number" name="percentage" />
+            %</label
           >
           <button type="submit" class="btn btn-primary px-5 py-2">Save</button>
         </form>
+
         <div>
-          <h3>Saving Amount:</h3>
-          <h3>Remaining Balance:</h3>
+          <h3>Saving Amount: <span class="savings">0</span></h3>
+          <h3>Remaining Balance: <span class="remaining-balance">0</span></h3>
         </div>
       </div>
     </main>
