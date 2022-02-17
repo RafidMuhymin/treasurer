@@ -31,23 +31,24 @@
           <div>
             <h3>Income</h3>
             <label
-              >Income: <input class="form-control" type="number" name="income"
+              >Income: <input class="form-control" type="text" name="Income"
             /></label>
           </div>
 
           <div>
             <h3>Expenses</h3>
             <label
-              >Food: <input class="form-control" type="number" name="foodCost"
+              >Food: <input class="form-control" type="text" name="Food"
             /></label>
             <label
-              >Rent: <input class="form-control" type="number" name="rentCost"
+              >Rent: <input class="form-control" type="text" name="Rent"
             /></label>
             <label
-              >Clothes:
-              <input class="form-control" type="number" name="clothCost"
+              >Clothes: <input class="form-control" type="text" name="Clothes"
             /></label>
           </div>
+
+          <p class="expenses-error-store fs-4 text-danger fw-bold"></p>
 
           <button type="submit" class="btn btn-primary px-5 py-2">
             Calculate
@@ -65,11 +66,14 @@
         >
           <label class="d-flex align-items-center justify-content-between"
             >Save:
-            <input class="form-control" type="number" name="percentage" />
+            <input class="form-control" type="text" name="percentage" />
             %</label
           >
+
           <button type="submit" class="btn btn-primary px-5 py-2">Save</button>
         </form>
+
+        <p class="savings-error-store fs-4 text-danger fw-bold"></p>
 
         <div>
           <h3>Saving Amount: <span class="savings">0</span></h3>
