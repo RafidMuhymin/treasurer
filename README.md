@@ -1,5 +1,3 @@
 # Money Master Assignment
 
-## [https://classroom.github.com/a/zFLvvYwR](https://classroom.github.com/a/zFLvvYwR)
-
-### Private Repo Link: [https://classroom.github.com/a/zFLvvYwR](https://classroom.github.com/a/zFLvvYwR)
+## Live URL: https://keen-lewin-2836ff.netlify.app/
